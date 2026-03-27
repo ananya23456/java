@@ -1,0 +1,38 @@
+ import java.util.*;
+  2 class Product
+  3 {
+  4     int pcode;
+  5     String pname;
+  6     double price;
+  7     Product(int c, String n, double p)
+  8             {
+  9                 pcode = c;
+ 10                 pname = n;
+ 11                 price = p;
+ 12             }
+ 13             void display()
+ 14             {
+ 15                 System.out.println("product Code:" + pcode);
+ 16                 System.out.println("product Name:" + pname);
+ 17                 System.out.println("Price:" + price);
+ 18             }
+ 19 }
+ 20 class Price
+ 21 {
+ 22     public static void main(String args[])
+ 23     {
+ 24         Product p1 = new Product(101,"pencil",5);
+ 25             Product p2 = new Product(102,"pen",10);
+ 26             Product p3 = new Product(103,"Book",40);
+ 27             Product lowest = p1;
+ 28         if(p2.price < lowest.price){
+ 29             lowest = p2;
+ 30         }
+ 31         if(p3.price < lowest.price){
+ 32             lowest = p3;
+ 33         }
+ 34         System.out.println("Product with Lowest Price:");
+ 35         lowest.display();
+ 36     }
+ 37 }
+~
