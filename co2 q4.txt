@@ -1,0 +1,27 @@
+ class Employe{
+          int eNo;
+          String eName;
+          double eSalary;
+      }
+      class Employ{
+          public static void main(String args[])
+          {
+              Employe e[] = new Employe[2];
+            e[0] = new Employe();
+            e[1] = new Employe();
+            e[0].eNo = 1;
+           e[0].eName = "A";
+          e[0].eSalary = 10000;
+         e[1].eNo = 2;
+        e[1].eName = "B";
+       e[1].eSalary = 20000;
+      int key = 2;
+     for(int i = 0; i < 2; i++)
+     {
+        if(e[i].eNo == key){
+           System.out.println("Name: " + e[i].eName);
+          System.out.println("Salary: " + e[i].eSalary);
+        }
+     }
+        }
+    }
