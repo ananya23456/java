@@ -1,0 +1,12 @@
+ import java.util.Arrays;
+ public class SortString {
+       public static void main(String[] args) {
+           String str = "programming";
+           char[] chars = str.toCharArray();
+           Arrays.sort(chars);
+           String sortedStr = new String(chars);
+  
+          System.out.println("Original String: " + str);
+          System.out.println("Sorted String: " + sortedStr);
+      }
+  }

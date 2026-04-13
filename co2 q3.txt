@@ -1,0 +1,23 @@
+public class StringManipulation {
+      public static void main(String[] args) {
+           String str = "Hello World";
+           System.out.println("Length: " + str.length());
+           System.out.println("Uppercase: " + str.toUpperCase());
+           System.out.println("Lowercase: " + str.toLowerCase());
+           String str2 = " Java";
+           System.out.println("Concatenation: " + str.concat(str2));
+           System.out.println("Character at index 1: " + str.charAt(1));
+          System.out.println("Substring (0 to 5): " + str.substring(0, 5));
+          System.out.println("Replace 'o' with 'x': " + str.replace('o', 'x'));
+          System.out.println("Equals 'Hello World': " + str.equals("Hello World"));
+          String str3 = "   Java   ";
+          System.out.println("Trimmed: " + str3.trim());
+          String sentence = "Java is easy";
+          String[] words = sentence.split(" ");
+          System.out.println("Words:");
+          for (String word : words) {
+              System.out.println(word);
+          }
+      }
+  }
+
